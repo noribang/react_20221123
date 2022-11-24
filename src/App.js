@@ -9,14 +9,16 @@ const user = {
   hometown: "Los Angeles, CA"
 }
 
+const className = "about-me-item"
+
 function App() {
   return (
     <div className="App">
       <h1>About Me</h1>
       <ul id="about-me">
-        <li>{user.name}</li>
-        <li>{user.position}</li>
-        <li>{user.hometown}</li>
+        <li className={className}>name: {user.name}</li>
+        <li className={className}>position: {user.position}</li>
+        <li className={className}>hometown: {user.hometown}</li>
       </ul>
     </div>
   );
