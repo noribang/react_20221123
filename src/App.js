@@ -13,14 +13,14 @@ const className = "about-me-item"
 
 function App() {
   return (
-    <div className="App">
+    <React.Fragment>
       <h1>About Me</h1>
       <ul id="about-me">
         <li className={className}>name: {user.name}</li>
         <li className={className}>position: {user.position}</li>
         <li className={className}>hometown: {user.hometown}</li>
       </ul>
-    </div>
+    </React.Fragment>
   );
 }
 
